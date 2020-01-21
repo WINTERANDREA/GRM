@@ -1,0 +1,68 @@
+:root {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  height: 50vh;
+}
+
+.btn-purple {
+  background-color: #817ade;
+  color: white;
+  padding: 0.2rem 1.3rem;
+}
+
+.btn-purple:hover {
+  background-color: #817ade;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  border: #817ade solid 1px;
+  color: #817ade;
+  margin-right: 10px;
+  padding: 0.2rem 1.3rem;
+}
+
+.btn-white:hover {
+  background-color: white;
+  border: #817ade solid 1px;
+  color: #817ade;
+}
+
+.showcase {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.showcase__bg--1 {
+  background-color: #ff6abc;
+}
+.showcase__bg--2 {
+  background-color: #7ddce2;
+}
+
+.showcase__bg--3 {
+  background-color: #ff9f39;
+}
+.showcase__bg--4 {
+  background-color: #b8d52f;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: space-around;
+  }
+}
