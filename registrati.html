@@ -26,8 +26,9 @@
     />
 
     <!-- Title -->
-    <title>GRM | Global Rights Management</title>
+    <title>GRM | Registrati</title>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-white">
@@ -45,7 +46,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <!-- class active to add -->
           <li class="nav-item">
             <a class="nav-link" href="artista.html">Artista</a>
@@ -65,32 +66,74 @@
       </div>
     </nav>
 
-    <!-- SHOWCASE -->
-    <header class="header">
-      <div class="header__showcase"></div>
-    </header>
+    <!-- FORM -->
 
-    <!-- MAIN -->
-    <main id="main">
-      <div class="main__container">
-        <div class="main__text">
-          <h1 class="main__h1 pb-4">Global Rights Managements</h1>
-          <h3 class="main__h3 pb-4">
-            Il primo sistema web integrato per la gestione dei diritti connessi
-            alla produzione musicale.
-          </h3>
-          <h5 class="main__h5">
-            GRM è una piattaforma integrata di funzioni, web service e
-            database.<br />Posizionata in cloud, permette di gestire, ricercare
-            ed elaborare tutte le informazioni necessarie alla filiera del
-            diritto connesso.
-          </h5>
+    <div
+      class="d-flex justify-content-center"
+      style="padding-bottom: 66px; padding-top: 91px;"
+    >
+      <div class="container form-header">
+        <div class="form-title" style="height: 84px;">
+          <h1 style="font-size: 48px;">Inizia Oggi!</h1>
+        </div>
+        <div class="form-header-content" style="height: 66px;">
+          <p style="font-size: 24px;">
+            Compila il form qui sotto e ti manderemo tutte<br />
+            le informazioni per la registrazione.
+          </p>
         </div>
       </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer id="footer"></footer>
+    </div>
+    <div class="container" style="width: 742px; margin: 0 auto">
+      <div class="form">
+        <form>
+          <div class="d-flex justify-content-between">
+            <div class="form-group" style="width: 100%; margin-right: 12px;">
+              <input
+                type="text"
+                class="form-control"
+                id="InputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Nome*"
+                style="border-radius: 5; height: 60px;"
+              />
+            </div>
+            <div class="form-group" style="width: 100%; margin-left: 12px;">
+              <input
+                type="text"
+                class="form-control"
+                id="InputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Telefono*"
+                style="border-radius: 5; height: 60px;"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="InputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email*"
+              style="border-radius: 5; height: 60px;"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              maxlength="400"
+              style="height: 218px; border-radius: 5;"
+              placeholder="Messaggio"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container" style="text-align: center; padding-top: 30px;">
+      <button type="button" class="btn btn-purple">INVIA</button>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

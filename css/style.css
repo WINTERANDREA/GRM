@@ -1,22 +1,19 @@
 :root {
-  width: 80%;
+  max-width: 1920px;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  /* this define what 1rem is */
+  /*  font-size: 62.5%; */ /*  1 rem = 10px; 10px/16px=62.5% */
 }
 
-.navbar {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.header {
-  display: grid;
-  height: 50vh;
-}
+/* UTILITIES */
 
 .btn-purple {
   background-color: #817ade;
   color: white;
   padding: 0.2rem 1.3rem;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .btn-purple:hover {
@@ -30,6 +27,9 @@
   color: #817ade;
   margin-right: 10px;
   padding: 0.2rem 1.3rem;
+
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .btn-white:hover {
@@ -38,27 +38,78 @@
   color: #817ade;
 }
 
-.showcase {
-  display: grid;
-  grid-template-rows: 250px 250px;
-  grid-template-columns: 1fr 1fr;
+/* NAVBAR */
+
+.navbar {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  box-sizing: padding-box;
+  box-shadow: 0px 1px 5px #0000004d;
 }
 
-.showcase__bg--1 {
-  background-color: #ff6abc;
-}
-.showcase__bg--2 {
-  background-color: #7ddce2;
-}
-
-.showcase__bg--3 {
-  background-color: #ff9f39;
-}
-.showcase__bg--4 {
-  background-color: #b8d52f;
+.navbar-brand {
+  background-image: url("../img/Group351.svg");
+  background-color: transparent;
+  width: 151px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (min-width: 992px) {
+/* SHOWCASE */
+.header {
+  width: 100%;
+  background-image: url("../img/Group539@2x.png");
+  background-color: transparent;
+  height: 655px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-sizing: padding-box;
+}
+
+/* MAIN */
+
+#main {
+  width: inherit;
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+  width: 100%;
+}
+
+.main__container {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.main__h1 {
+}
+
+.main__h3 {
+}
+
+.main__h5 {
+}
+
+/* FOOTER */
+
+/* FORM */
+.form-header {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 812px) {
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
